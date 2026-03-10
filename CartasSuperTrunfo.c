@@ -26,22 +26,27 @@ int main() {
     printf("Populacao: ");
     scanf("%lu", &c1.populacao);
     printf("Area (km2): ");
-    scanf("%f", &c1.area);
+    scanf("%[^\n]f", &c1.area);
     printf("PIB (em bilhoes): ");
     scanf("%f", &c1.pib);
     printf("Pontos Turisticos: ");
     scanf("%d", &c1.pontosTuristicos);
 
     // Repetimos para a Carta 2 (Pode-se copiar o bloco acima e mudar para c2)
-    printf("\n--- Cadastro da Carta 2 ---\n");
-    printf("Cidade 2: ");
+     printf("Digite o Estado (ex: Parana): ");
+    scanf(" %[^\n]s", c2.estado);
+    printf("Sigla (ex: PR): ");
+    scanf("%s", c2.sigla);
+    printf("Cidade: ");
     scanf(" %[^\n]s", c2.cidade);
-    printf("Populacao 2: ");
+    printf("Populacao: ");
     scanf("%lu", &c2.populacao);
-    printf("Area 2: ");
-    scanf("%f", &c2.area);
-    printf("PIB 2: ");
+    printf("Area (km2): ");
+    scanf("%[^\n]f", &c2.area);
+    printf("PIB (em bilhoes): ");
     scanf("%f", &c2.pib);
+    printf("Pontos Turisticos: ");
+    scanf("%d", &c2.pontosTuristicos);
 
     // --- Calculos Basicos ---
     densidade1 = (float)c1.populacao / c1.area;
